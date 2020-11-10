@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>Página Principal</title>
+<link rel="shortcut icon" type="image/png" th:href="@{/img/favicon.png}"/>
+</head>
+<body>
+	<!--  
+	<h1 th:text="${mensaje}"></h1>
+	<br>
+	<h2>[[${fecha}]]</h2>
+	-->
+	
+	<h1>Bienvenido</h1>
+	<h2>Oferta de trabajo</h2>
+	<h3 th:text="'Titulo: ' + ${nombre} "></h3>
+	<h3 th:text="'Fecha Pub: ' + ${fecha} "></h3>
+	<h3 th:text="'Salario Ofrecido: ' + ${salario} "></h3>
+	<h3 th:text="'Vigente: ' + ${vigente} "></h3>
+</body>
+</html>

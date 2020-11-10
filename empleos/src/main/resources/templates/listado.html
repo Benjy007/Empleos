@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Listado de ofertas de Trabajo</title>
+		<link rel="shortcut icon" type="image/png" th:href="@{/img/favicon.png}"/>
+	</head>
+	<body>
+		<h1>Vacantes Disponibles</h1>
+		
+		<ol>
+			<li th:each="tmpEmp: ${empleos}" th:text="${tmpEmp}"/>
+		</ol>
+	</body>
+</html>
