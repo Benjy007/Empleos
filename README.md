@@ -1,2 +1,2 @@
 # Empleos
-Ejemplo practico de un app de empleos
+Ejemplo práctico de una app de empleos
