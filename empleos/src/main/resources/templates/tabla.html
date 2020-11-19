@@ -23,7 +23,8 @@
 				<th>Salario Ofrecido</th>
 				<th>Fecha Publicación</th>
 				<th>Destacado</th>
-				
+				<th>Detalle</th>
+				<th>Borrar</th>
 			</tr>
 			
 			<tr th:each="vacante : ${vacantes}">
@@ -45,6 +46,14 @@
 				<span th:if="${vacante.destacado == 1}" class="badge badge-success">Si</span>
 				<span th:unless="${vacante.destacado == 1}" class="badge badge-danger">No</span>
 				
+				</td>
+				
+				<td> 
+					<a th:href="@{/vacantes/view/{id} (id=${vacante.id})}" class="btn btn-success">Detalle</a>
+				</td>
+				
+				<td>
+					<a th:href="@{/vacantes/delete/(id=${vacante.id})}" class="btn btn-danger">Borrar</a>
 				</td>
 				
 			</tr>
