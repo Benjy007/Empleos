@@ -3,8 +3,23 @@
 	<head>
 		<meta charset="UTF-8"/>
 		<title>Insert title here</title>
+		<link rel="shortcut icon" type="image/png" th:href="@{/img/favicon.png}"/>
 	</head>
 	<body>
 		<h1>Creación de Categoria</h1>
+		
+		<form th:action="@{/categorias/save}" method="post">
+		  <label for="nombre">Nombre:</label>
+		  <br>
+		  <input type="text" id="nombre" name="nombre" value="">
+		  <br>
+		  
+		  <label for="descripcion">Descripción:</label><br>
+		  <input type="text" id="descripcion" name="descripcion" value="">
+		  <br><br>
+		  
+		  <input type="submit" value="Guardar">
+		</form> 
+		
 	</body>
 </html>
